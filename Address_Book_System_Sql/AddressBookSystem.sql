@@ -46,3 +46,6 @@ update address_book_table set AddressBookName = 'Manager',TypeOfAddressBook = 'P
 -----UC-10 Count by Type-----
 select count(*) as noOfContacts,TypeOfAddressBook from address_book_table group by TypeOfAddressBook
 
+
+-----UC-11 Insert same contact as family and friend-----
+insert into address_book_table values('Amir','Khan','Ambattur','Chennai','TamilNadu','600660','7744556699','amir123@gmail.com','Home','Family')
