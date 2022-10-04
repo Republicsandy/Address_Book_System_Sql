@@ -43,3 +43,6 @@ update address_book_table set AddressBookName = 'Home',TypeOfAddressBook = 'Fami
 update address_book_table set AddressBookName = 'School',TypeOfAddressBook = 'Friends' where FirstName = 'xxx' or FirstName = 'Amir'
 update address_book_table set AddressBookName = 'Manager',TypeOfAddressBook = 'Profession' where FirstName = 'Dhanush'
 
+-----UC-10 Count by Type-----
+select count(*) as noOfContacts,TypeOfAddressBook from address_book_table group by TypeOfAddressBook
+
